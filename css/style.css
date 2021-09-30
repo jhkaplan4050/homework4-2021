@@ -60,7 +60,7 @@ a{
 /*Req 5*/
 /*Add selector and rule here*/
 
-:focus* {
+*:focus {
   border: 3px dashed #417243;
 }
 
@@ -82,7 +82,7 @@ td{
   background-color: #7e0825;
 
 
-}
+}  
 
 .rowhead{
   vertical-align: middle;
@@ -93,6 +93,7 @@ td{
 
 table{
   border: 5px solid #000000;
+  border-radius: 50px;
   margin-right: auto;
   margin-left: auto;
 }
