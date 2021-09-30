@@ -111,7 +111,7 @@ tbody tr:last-child th:first-child {
   border-bottom-left-radius: 50px;
 }
 
-tbody tr:last-child th:last-child {
+tbody tr:last-child td:last-child {
   border-bottom-right-radius: 50px;
 }
 
@@ -136,6 +136,8 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
+  bottom: 0;
+  position: fixed; 
 
 
 }
