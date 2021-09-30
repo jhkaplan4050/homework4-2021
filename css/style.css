@@ -25,28 +25,24 @@ caption{
 /*END STARTER CODE*/
 
 body{
-  background-image: url('../images/pigeon-background.JPEG');
-  background-color: #DDDDDD;
-  background-repeat: no-repeat;
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
-  background-size: cover;
+  background-size: cover ;
   background-position: center;
-  font-family: 'Andika', sans-serif;
-
-  /* Go back to this section */
+  font-family: "Andika", sans-serif;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-color: #DDDDDD;
+  background-repeat: no-repeat;
 
   /*Req 1*/
 }
 
 h1{
-  height: 32px;
-  text-align: center;
   color: #c12258;
-  font-size: 2em;
+  font-size: 32px;
+  text-align: center; 
   line-height: 2;
-  
 
   /*Req 2*/
 }
@@ -55,36 +51,24 @@ p{
   padding-top: 15px;
 }
 
-
-
 a{
   font-size: 16px;
-  color: #C12258;
+  color: #B21F50;
   text-decoration-style: wavy;
-
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
 
-* :focus{
-  border: 3px dashed #417243; 
+:focus* {
+  border: 3px dashed #417243;
 }
-
-tr:nth-child(even) {
-  background-color: #D1D1D1;
-}
-
-tr:hover {
-  opacity: .25;
-  background-color: #7e0825; 
-}
-
 
 td{
-  border-top: 2px #000000;
-  padding: 10px 0;
   text-align: center;
+  border-top: 2px solid black;
+  padding: 10px;
+
 }
 
 
@@ -93,27 +77,25 @@ td{
   min-width: 125px;
   padding: 10px;
   text-align: center;
-
+  vertical-align: middle;
   text-transform: uppercase;
   background-color: #7e0825;
 
-}
 
+}
 
 .rowhead{
-  border: 2px #000000;
+  vertical-align: middle;
+  border: 2px solid black; 
+
 
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
+table{
   border: 5px solid #000000;
-
-  
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
 
 thead tr:first-child th:first-child{
   border-top-left-radius: 50px;
@@ -121,24 +103,38 @@ thead tr:first-child th:first-child{
 
 thead tr:first-child th:last-child {
   border-top-right-radius: 50px;
+
 }
-table tr:last-child th:first-child {
+
+tbody tr:last-child th:first-child {
   border-bottom-left-radius: 50px;
 }
 
-table tr:last-child th:last-child {
+tbody tr:last-child th:last-child {
   border-bottom-right-radius: 50px;
 }
 
 
+tbody th:first-child {
+  border-bottom-style: none;
+}
 
+
+tr:nth-child(even) {
+  background-color: #D1D1D1;
+}
+
+tr:hover {
+  background-color: rgba(126, 8, 37, .25);
+}
 
 
 footer{
-  min-height: 75px;
   width:100%;
-  position: absolute;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+
+
 }
